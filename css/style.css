@@ -2,12 +2,16 @@ html, body {
     font-family: 'PT Sans Caption', sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    min-width: 280px;
 }
 img {
     display: inline-block;
 }
 a {
     transition: 0.2s ease-out;
+}
+* {
+    box-sizing: border-box;
 }
 /* ----------------------------------
                  GRID
@@ -44,6 +48,7 @@ a {
     background-size: cover;
     
     height: 100vh;
+    min-height: 400px;
     
     color: #FFF;
     text-align: center;
@@ -97,6 +102,11 @@ a {
 .content-item__img {
     margin-bottom: 17px;
 }
+.content-item__img img{
+    max-width: 100%;
+    height: auto;
+}
+
 .content-item__tittle {
     font-size: 24px;
     line-height: normal;
@@ -228,4 +238,50 @@ p.footer__social-icons a:hover {
     font-family: 'Merriweather', serif;
     font-size: 20px;
     letter-spacing: 6px;
+}
+/* ----------------------------------
+                 MEDIA
+   ---------------------------------- */
+/* При ширине экрана в 1160px и менее */
+@media (max-width: 1160px) {
+    .container {
+        width: 100%;
+    }
+    
+    .col-4 {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+        
+    }
+    .header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    
+    .header__title {
+        font-size: 38px;
+        line-height: 48px;
+        margin-bottom: 15px;
+    }
+    
+    .header__slogan {
+        font-size: 22px;
+        line-height: 38px;
+    }
+    .content {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    .title {
+        font-size: 36px;
+    }
+    .footer {
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
 }

@@ -238,8 +238,6 @@ p.footer__social-icons a:hover {
     font-family: 'Merriweather', serif;
     font-size: 20px;
     letter-spacing: 6px;
-    text-align: center;
-    padding-left: 10px;
 }
 /* ----------------------------------
                  MEDIA
@@ -256,9 +254,9 @@ p.footer__social-icons a:hover {
         margin-bottom: 30px;
         padding-left: 15px;
         padding-right: 15px;
-        text-align: center;
-        
+        text-align: center;    
     }
+    
     .header {
         padding-left: 15px;
         padding-right: 15px;
@@ -285,5 +283,9 @@ p.footer__social-icons a:hover {
     .footer {
         padding-top: 70px;
         padding-bottom: 60px;
+    }
+    .fotter__text__name{
+        text-align: center;
+        padding-left: 10px;
     }
 }

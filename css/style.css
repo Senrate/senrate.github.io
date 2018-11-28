@@ -287,5 +287,6 @@ p.footer__social-icons a:hover {
     .fotter__text__name{
         text-align: center;
         padding-left: 10px;
+        letter-spacing: 6px;
     }
 }
